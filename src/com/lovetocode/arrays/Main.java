@@ -9,8 +9,10 @@ public class Main {
         Arrays arrays=new Arrays();
         int n=new Scanner(System.in).nextInt();
         int arr[]=arrays.getIntegers(n);
-        int minVal= arrays.findMinValInArr(arr);
-        System.out.println("minVal = " + minVal);
+        int reverseArr[]=arrays.reverseArray(arr);
+        System.out.println("java.util.Arrays.toString(reverseArr) = " + java.util.Arrays.toString(reverseArr));
+//        int minVal= arrays.findMinValInArr(arr);
+//        System.out.println("minVal = " + minVal);
 //        arr=arrays.getSortedArr(arr);
 //        arrays.printSortedArr(arr);
 

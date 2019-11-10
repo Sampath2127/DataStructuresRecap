@@ -47,5 +47,17 @@ public class Arrays {
                 }
         return minVal;
     }
+
+    public int[] reverseArray(int[] arr) {
+        int max_index=arr.length-1;
+        int halfLength=arr.length/2;
+
+        for(int i=0; i<halfLength; i++){
+            int temp=arr[i];
+            arr[i] = arr[max_index-i];
+            arr[max_index-i] = temp;
+        }
+        return arr;
+    }
 }
 
