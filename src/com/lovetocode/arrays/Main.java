@@ -1,5 +1,6 @@
 package com.lovetocode.arrays;
 
+import javax.jnlp.IntegrationService;
 import java.util.Scanner;
 
 public class Main {
@@ -8,8 +9,12 @@ public class Main {
         Arrays arrays=new Arrays();
         int n=new Scanner(System.in).nextInt();
         int arr[]=arrays.getIntegers(n);
-        arr=arrays.getSortedArr(arr);
-        arrays.printSortedArr(arr);
+        int minVal= arrays.findMinValInArr(arr);
+        System.out.println("minVal = " + minVal);
+//        arr=arrays.getSortedArr(arr);
+//        arrays.printSortedArr(arr);
 
     }
+
+
 }

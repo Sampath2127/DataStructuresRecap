@@ -38,5 +38,14 @@ public class Arrays {
         }
         
     }
+     public int findMinValInArr(int[] arr) {
+        int minVal= Integer.MAX_VALUE;
+
+        for(int i: arr)
+            if(i<minVal){
+                    minVal=i;
+                }
+        return minVal;
+    }
 }
 
